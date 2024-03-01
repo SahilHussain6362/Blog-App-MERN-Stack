@@ -29,7 +29,7 @@ export default function Header() {
           className="hidden lg:inline"
         />
       </form>
-      
+
       <Button className="w-12 h-10 lg:hidden" color="gray">
         <AiOutlineSearch />
       </Button>
@@ -38,7 +38,7 @@ export default function Header() {
           <FaMoon />
         </Button>
         <Link to="/sign-in">
-          <Button gradientDuoTone={'purpleToBlue'}>
+          <Button gradientDuoTone={'purpleToBlue'} outline>
             Sign In
           </Button>
         </Link>
