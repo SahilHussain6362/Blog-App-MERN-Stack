@@ -3,6 +3,9 @@ import { Button, Label, TextInput } from 'flowbite-react'
 import { Link } from 'react-router-dom'
 
 export default function SignUp() {
+  const handleChange = (e) => {
+    console.log(e.target.value);
+  }
   return (
     <div className='min-h-screen mt-20 '>
     <div className='flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5'>
@@ -31,22 +34,25 @@ export default function SignUp() {
               type='text'
               placeholder='Username'
               id='username'
+              onChange={handleChange}
             />
           </div>
           <div>
             <Label value='Your email' />
             <TextInput 
-              type='text'
+              type='email'
               placeholder='name@company.com'
               id='email'
+              onChange={handleChange}
             />
           </div>
           <div>
             <Label value='Your password' />
             <TextInput 
-              type='text'
+              type='password'
               placeholder='Password'
               id='password'
+              onChange={handleChange}
             />
           </div>
           <Button gradientDuoTone='purpleToPink' type='submit'>
