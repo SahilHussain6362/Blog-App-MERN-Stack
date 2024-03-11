@@ -29,7 +29,7 @@ export default function FooterCom() {
                   Cool JS Projects
                 </Footer.Link>
                 <Footer.Link
-                  href='/about'++
+                  href='/about'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
