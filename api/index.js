@@ -21,7 +21,7 @@ mongoose
 const app = express();
 
 app.use(express.json()); //so, that we can console log req.body
-app.use(cookieParser);
+app.use(cookieParser());
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000!');
