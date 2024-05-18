@@ -20,6 +20,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: 'https://shorturl.at/binD1',
     },
+    isAdmin: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );
